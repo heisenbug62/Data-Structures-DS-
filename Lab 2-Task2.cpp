@@ -14,9 +14,9 @@ protected:
 public:
 	fulltime(int h) : sal(7000), hrs(h) {}
 
-	int calcsalary(int s, int h)
+	int calcsalary()
 	{
-		return s * h;
+		return sal * hrs;
 	}
 
 };
@@ -45,4 +45,8 @@ int main()
 	parttime A(4600, 7);
 	fulltime B(5);
 
+	cout << A.calcsalary() << "is the salary of the PartTime Employee A" << endl;
+	cout << B.calcsalary() << "is the salary of the FullTime Employee B";
+
+	return 0;
 }
