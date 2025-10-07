@@ -44,4 +44,5 @@ int main()
 {
 	parttime A(4600, 7);
 	fulltime B(5);
+
 }
